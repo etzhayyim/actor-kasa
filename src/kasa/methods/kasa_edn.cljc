@@ -1,5 +1,5 @@
 (ns kasa.methods.kasa-edn
-  "kasa 嵩 — minimal EDN-subset reader (1:1 Clojure port of methods/kasa_edn.py).
+  "kasa 嵩 — canonical minimal EDN-subset reader.
 
   Parses the subset of EDN the kasa seed / output files use: a top-level vector of
   maps whose values are strings, doubles (incl. scientific 5.0e25), longs, keywords,

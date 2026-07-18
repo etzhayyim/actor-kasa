@@ -1,5 +1,5 @@
 (ns kasa.tests.test-invariants
-  "kasa 嵩 — charter-invariant + gate tests. 1:1 Clojure port of tests/test_invariants.py.
+  "kasa 嵩 — charter-invariant + gate tests..
 
   The LOAD-BEARING structural invariants: kasa is NON-ADJUDICATING (G2), gives NO FORECAST
   (G4 — measured/estimated actuals only; future projection is mitooshi 見通し), is a PLANNING lens
@@ -13,7 +13,7 @@
             [kasa.methods.sources :as sources]
             [kasa.methods.analyze :as analyze]))
 
-(def actor-dir (-> *file* io/file .getParentFile .getParentFile))
+(def actor-dir (io/file (or (System/getProperty "user.dir") ".")))
 (def seed (io/file actor-dir "data" "seed-compute-capacity.kotoba.edn"))
 (def valid-sourcing #{":authoritative" ":representative" ":estimated" ":synthesized"})
 

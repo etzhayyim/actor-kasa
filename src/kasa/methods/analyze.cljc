@@ -1,5 +1,5 @@
 (ns kasa.methods.analyze
-  "kasa 嵩 — analyze cell. 1:1 Clojure port of methods/analyze.py (ADR-2606072000).
+  "kasa 嵩 — analyze cell. CLJC implementation (ADR-2606072000).
 
   Reads the worldwide computing-capacity observation graph and emits AGGREGATE-FIRST
   observations of the world's annual compute MAGNITUDE and GROWTH (年間増加量):
@@ -425,7 +425,7 @@
 #?(:clj
    (defn -main [& argv]
      (let [argv (vec argv)
-           here (-> *file* clojure.java.io/file .getParentFile .getParentFile)
+           here (clojure.java.io/file (or (System/getProperty "user.dir") "."))
            src (if (and (seq argv) (not (str/starts-with? (first argv) "--")))
                  (clojure.java.io/file (first argv))
                  (clojure.java.io/file here "data" "seed-compute-capacity.kotoba.edn"))

@@ -1,5 +1,5 @@
 (ns kasa.methods.sources
-  "kasa 嵩 — source catalogue (the G1 admissibility layer). 1:1 Clojure port of methods/sources.py.
+  "kasa 嵩 — source catalogue (the G1 admissibility layer)..
 
   The single source of truth for WHICH public sources kasa may ingest. Encodes the constitutional
   G1 rule (Charter Rider §2(e) anti-gatekeeping + §2(c) vendor query-tracking):

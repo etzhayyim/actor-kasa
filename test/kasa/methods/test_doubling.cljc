@@ -1,6 +1,6 @@
 #!/usr/bin/env bb
 ;; kasa 嵩 — tests for the doubling-period restatement of a measured CAGR.
-;; Run:  bb --classpath 20-actors 20-actors/kasa/methods/test_doubling.cljc
+;; Run:  bb --classpath src:test test/kasa/methods/test_doubling.cljc
 (ns kasa.methods.test-doubling
   "Tests for doubling-period / series-doubling-periods — the doubling-time restatement of a MEASURED
   CAGR (the canonical compute-growth reading). Verifies it is a PURE transform of the measured rate

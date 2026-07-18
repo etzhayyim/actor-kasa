@@ -1,0 +1,8 @@
+{:paths ["src" "test"]
+ :tasks {test {:requires ([clojure.test] [kasa.methods.test-doubling]
+                          [kasa.methods.test-ingest] [kasa.murakumo-test]
+                          [kasa.tests.test-invariants] [kasa.tests.test-kasa])
+               :task (let [r (clojure.test/run-tests 'kasa.methods.test-doubling
+                              'kasa.methods.test-ingest 'kasa.murakumo-test
+                              'kasa.tests.test-invariants 'kasa.tests.test-kasa)]
+                       (when (pos? (+ (:fail r) (:error r))) (throw (ex-info "kasa tests failed" r))) r)}}}

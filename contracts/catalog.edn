@@ -1,0 +1,7 @@
+{:catalog/version 1 :catalog/canonical-format :edn :actor :kasa
+ :contracts [{:name :publish-growth-report :canonical/path "contracts/lexicons/publishGrowthReport.edn" :wire/path "wire/contracts/lexicons/publishGrowthReport.json"}
+             {:name :register-observation :canonical/path "contracts/lexicons/registerObservation.edn" :wire/path "wire/contracts/lexicons/registerObservation.json"}
+             {:name :register-series :canonical/path "contracts/lexicons/registerSeries.edn" :wire/path "wire/contracts/lexicons/registerSeries.json"}
+             {:name :register-source :canonical/path "contracts/lexicons/registerSource.edn" :wire/path "wire/contracts/lexicons/registerSource.json"}]
+ :identity [{:kind :did-document :wire/path "wire/identity/did.json"}
+            {:kind :actor-profile :wire/path "wire/identity/profile.json"}]}

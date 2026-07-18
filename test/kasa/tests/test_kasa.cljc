@@ -1,5 +1,5 @@
 (ns kasa.tests.test-kasa
-  "kasa 嵩 — unit tests. 1:1 Clojure port of tests/test_kasa.py (ADR-2606072000).
+  "kasa 嵩 — unit tests. CLJC suite (ADR-2606072000).
 
   Ports the EDN-reader, sources-admissibility, analyze YoY/CAGR/aggregate, and report-render
   assertions. The three ingest-cell tests (test_ingest_refuses_prohibited_publisher /
@@ -13,7 +13,7 @@
             [kasa.methods.sources :as sources]
             [kasa.methods.analyze :as analyze]))
 
-(def actor-dir (-> *file* io/file .getParentFile .getParentFile))
+(def actor-dir (io/file (or (System/getProperty "user.dir") ".")))
 (def seed (io/file actor-dir "data" "seed-compute-capacity.kotoba.edn"))
 
 ;; ── edn reader: scientific notation (frontier-training FLOP) ──────────────────
