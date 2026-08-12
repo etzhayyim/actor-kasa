@@ -1,4 +1,4 @@
-{:did        "did:web:etzhayyim.github.io:com-etzhayyim-kasa"
+{:did        "did:web:etzhayyim.com:actor:kasa"
  :handle     "kasa.etzhayyim.com"
  :ipns-key   "kasa-actor"
  :graph-type "com.etzhayyim.kasa.graph"
