@@ -13,6 +13,6 @@ and never forecasts or adjudicates.
 
 EDN under `manifest.edn`, `contracts/`, and `data/` is canonical. External lexicon
 and DID JSON is isolated under `wire/`. Runtime namespaces and tests live under
-`src/kasa` and `test/kasa`. Run the comprehensive suite with `bb test`.
+`src/kasa` and `test/kasa`. Run the comprehensive suite with `kbb -M:test`.
 
 Go, TinyGo, Python twins, shell runners, and legacy JSON-LD manifests are prohibited.

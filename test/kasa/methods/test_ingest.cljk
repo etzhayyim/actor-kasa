@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; New Clojure test for methods/ingest.clj (no Python test existed; fresh coverage).
 (ns kasa.methods.test-ingest
   "Tests for the kasa 嵩 compute-capacity ingest bridge (methods/ingest.clj).
@@ -9,7 +9,7 @@
   refuse), rows_to_obs shape + G1 admissibility, and parity with the seed (71 rows when
   0 ingest rows are provided — the same figure produced by python3 ingest.py).
 
-  Run:  bb --classpath src:test test/kasa/methods/test_ingest.cljk"
+  Run:  kbb --classpath src:test test/kasa/methods/test_ingest.cljk"
   (:require [kasa.methods.ingest :as ing]
             [kasa.methods.kasa-edn :as ke]
             [clojure.java.io :as io]
