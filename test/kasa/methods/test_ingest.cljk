@@ -14,7 +14,7 @@
             [kasa.methods.kasa-edn :as ke]
             [clojure.java.io :as io]
             [kotoba.lang.text :as str]
-            [clojure.test :refer [deftest is run-tests]]))
+            [kotoba.test :refer [deftest is run-tests]]))
 
 (defn- actor-root [] (io/file (or (System/getProperty "user.dir") ".")))
 (defn- seed-path [] (str (io/file (actor-root) "data" "seed-compute-capacity.kotoba.edn")))

@@ -5,7 +5,7 @@
   (G4 — measured/estimated actuals only; future projection is mitooshi 見通し), is a PLANNING lens
   not a targeting list (G9), sources are public-only (G1), seed obs are sourcing-honest (G5), and
   every derived number is flagged :synthesized. ADR-2606072000."
-  (:require [clojure.test :refer [deftest is run-tests]]
+  (:require [kotoba.test :refer [deftest is run-tests]]
             [clojure.java.io :as io]
             [kotoba.lang.text :as str]
             [clojure.set]

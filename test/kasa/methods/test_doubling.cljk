@@ -7,7 +7,7 @@
   (G4: no dated future value is projected; nil at non-positive growth) and the per-series companion
   to CAGR (fastest-doubling measured series first)."
   (:require [kasa.methods.analyze :as a]
-            [clojure.test :refer [deftest is run-tests]]))
+            [kotoba.test :refer [deftest is run-tests]]))
 
 (defn- close? [x y] (< (Math/abs (- (double x) (double y))) 1e-3))
 
