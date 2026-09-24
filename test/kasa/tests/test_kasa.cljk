@@ -7,7 +7,7 @@
   unported `ingest` module (a separate cell; analyze.py imports only kasa_edn) and are
   intentionally DEFERRED here, mirroring the inochi precedent of omitting sibling-module tests."
   (:require [kotoba.test :refer [deftest is run-tests]]
-            [clojure.java.io :as io]
+            [kotoba.io :as io]
             [kotoba.lang.text :as str]
             [kasa.methods.kasa-edn :as kasa-edn]
             [kasa.methods.sources :as sources]

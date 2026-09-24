@@ -6,7 +6,7 @@
   not a targeting list (G9), sources are public-only (G1), seed obs are sourcing-honest (G5), and
   every derived number is flagged :synthesized. ADR-2606072000."
   (:require [kotoba.test :refer [deftest is run-tests]]
-            [clojure.java.io :as io]
+            [kotoba.io :as io]
             [kotoba.lang.text :as str]
             [clojure.set]
             [kasa.methods.kasa-edn :as kasa-edn]

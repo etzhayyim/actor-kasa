@@ -12,7 +12,7 @@
   Run:  kbb --classpath src:test test/kasa/methods/test_ingest.cljk"
   (:require [kasa.methods.ingest :as ing]
             [kasa.methods.kasa-edn :as ke]
-            [clojure.java.io :as io]
+            [kotoba.io :as io]
             [kotoba.lang.text :as str]
             [kotoba.test :refer [deftest is run-tests]]))
 
