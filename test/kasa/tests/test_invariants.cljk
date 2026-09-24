@@ -8,7 +8,7 @@
   (:require [kotoba.test :refer [deftest is run-tests]]
             [kotoba.io :as io]
             [kotoba.lang.text :as str]
-            [clojure.set]
+            [kotoba.lang.coll]
             [kasa.methods.kasa-edn :as kasa-edn]
             [kasa.methods.sources :as sources]
             [kasa.methods.analyze :as analyze]))
@@ -88,6 +88,6 @@
                             (get a ":compute.agg/year")]) aggs)]
     (is (= (count keys-) (count (set keys-))) "aggregate keys must be unique per (domain,metric,unit,scale,year)")
     (let [domains (set (map #(get % ":compute.agg/key") aggs))]
-      (is (clojure.set/subset? #{":semiconductor" ":dram" ":nand"} domains)))))
+      (is (kotoba.lang.coll/subset? #{":semiconductor" ":dram" ":nand"} domains)))))
 
 #?(:clj (defn -main [& _] (run-tests 'kasa.tests.test-invariants)))
